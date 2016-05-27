@@ -6,17 +6,24 @@ import java.util.List;
 
 import com.zzhn.fragment.VpSimpleFragment;
 import com.zzhn.view.ViewPagerIndicator;
-import com.zzhn.view.ViewPagerIndicator.PageOnchangeListener;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class FindActivity extends FragmentActivity {
+	
+	RadioGroup group;
+	RadioButton wode ;
 	
 	private ViewPager mViewPager;
 	private ViewPagerIndicator mIndicator;
@@ -31,6 +38,10 @@ public class FindActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_find);
+		
+		group = (RadioGroup) findViewById(R.id.main_home_btn_group);
+		wode = (RadioButton) findViewById (R.id.main_home_btn_wode);
+		wode.setOnClickListener(l);
 		
 		initViews();
 		initDatas();
@@ -68,7 +79,24 @@ public class FindActivity extends FragmentActivity {
 		
 	}
 
+	OnClickListener l = new OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			switch (v.getId()) {
+			case R.id.main_home_btn_wode:
+				Intent intent_wode = new Intent();
+				intent_wode.setClass(FindActivity.this,WodeActivity.class);
+				startActivity(intent_wode);
+				break;
 
+			default:
+				break;
+			}
+		}
+	};
+	
 	private void initDatas() {
 		// TODO Auto-generated method stub
 		

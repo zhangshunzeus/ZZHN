@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-    
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_home_rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="5.0">
+
+        <RelativeLayout
+            android:id="@+id/main_home_rl_tab00"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/main_home_btn_tab00"
+                android:layout_width="wrap_content"
+                android:layout_height="60.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/main_home_qingbao_selector"
+                android:button="@null"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_home_rl_tab01"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/main_home_btn_tab01"
+                android:layout_width="wrap_content"
+                android:layout_height="60.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/main_home_zhoubian_selector"
+                android:button="@null"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_home_rl_more"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/main_home_btn_more"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/main_home_more" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_home_rl_xiaoxi"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/main_home_btn_xiaoxi"
+                android:layout_width="wrap_content"
+                android:layout_height="60.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/main_home_xiaoxi_selector"
+                android:button="@null"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_home_rl_wode"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/main_home_btn_wode"
+                android:layout_width="wrap_content"
+                android:layout_height="60.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/main_home_wode_selector"
+                android:button="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/main_home_new_message"
+                android:layout_width="10.0dip"
+                android:layout_height="10.0dip"
+                android:layout_alignRight="@id/main_home_btn_wode"
+                android:layout_alignTop="@id/main_home_btn_wode"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="6.0dip"
+                android:background="@drawable/icon_new_message"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip"
+        android:layout_above="@id/main_home_rl_bottom"
+        android:background="#ff9d9d9d" />
+</RelativeLayout>
+

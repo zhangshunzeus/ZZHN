@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.zzhn.zhongzhenhuaneng"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:hyman="http://schemas.android.com/apk/res/com.zzhn.zhongzhenhuaneng" >
+    android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,8 +38,6 @@
         android:background="#000000"
         android:orientation="horizontal"
         hyman:visible_tab_count="4" >
-
-        
     </com.zzhn.view.ViewPagerIndicator>
 
     <android.support.v4.view.ViewPager
@@ -48,5 +46,10 @@
         android:layout_height="0dp"
         android:layout_weight="1" >
     </android.support.v4.view.ViewPager>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/bottom_button" />
 
 </LinearLayout>
