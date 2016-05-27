@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">光热云</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	 <string name="person_edit_introduce_txt">亲爱的朋友，真实填写完整个人资料，并经过中振华能确认可以免费认证为VIP用户，获得更多潜在机会和好友！</string>
+    
+    
+</resources>

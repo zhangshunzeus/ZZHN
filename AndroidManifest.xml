@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zzhn.zhongzhenhuaneng"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+        <!-- 登录页面 -->
+        <activity android:name=".LoginActivity"></activity>
+
+        <!-- 用户信息修改页面 -->
+        <activity android:name=".EditActivity"></activity>
+
+        <!-- 用户信息我的页面 -->
+        <activity android:name=".WodeActivity"></activity>
+        
+        <!-- 发现页面  -->
+        <activity android:name="com.zzhn.zhongzhenhuaneng.FindActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 注册页面 -->
+        <activity android:name="com.zzhn.zhongzhenhuaneng.RegisterActivity" >
+            
+        </activity>
+        
+    </application>
+
+</manifest>

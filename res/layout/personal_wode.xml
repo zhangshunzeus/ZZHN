@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/head_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="我的"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_bar_textsize" />
+
+                <Button
+                    android:id="@+id/btn_personal_setting"
+                    android:layout_width="36.0dip"
+                    android:layout_height="36.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6.0dip"
+                    android:background="@drawable/ic_launcher"
+                    android:textColor="@color/white"
+                    android:textSize="14.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18.0dip"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="10.0dip">
+
+                <ImageView
+                    android:id="@+id/iv_personal_info_figure"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@drawable/ic_launcher" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_personal_info_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_personal_info_figure"
+                    android:layout_toRightOf="@id/iv_personal_info_figure">
+
+                    <TextView
+                        android:id="@+id/tv_personal_info_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip"
+                        android:ellipsize="end"
+                        android:maxLength="18"
+                        android:singleLine="true"
+                        android:text="深圳市中振华能技术有限公司"
+                        android:textColor="@color/white"
+                        android:textSize="18.0sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_personal_info_iconvip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_personal_info_nickname"
+                        android:layout_below="@id/tv_personal_info_nickname"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginTop="4.0dip"
+                        android:background="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/iv_personal_info_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_personal_info_nickname"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6.0dip"
+                        android:layout_marginTop="4.0dip"
+                        android:layout_toRightOf="@id/iv_personal_info_iconvip"
+                        android:background="@drawable/ic_launcher"
+                        android:gravity="center"
+                        android:text="编辑"
+                        android:textColor="@color/white"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_personal_2share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/rl_personal_info_edit"
+                    android:layout_marginRight="28.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@drawable/ic_launcher" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_mid_line"
+                android:layout_width="wrap_content"
+                android:layout_height="0.30000007dip"
+                android:background="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3.0">
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting_message"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/iv_setting_message_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tv_message_new_coming"
+                        android:layout_width="10.0dip"
+                        android:layout_height="10.0dip"
+                        android:layout_alignRight="@id/iv_setting_message_icon"
+                        android:layout_alignTop="@id/iv_setting_message_icon"
+                        android:layout_marginRight="-5.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:background="@drawable/ic_launcher"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_setting_message_icon"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/transparent"
+                        android:text="消息"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_person_mid_line"
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ic_launcher" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting_yunyou"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/iv_setting_yunyou_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_setting_yunyou_icon"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/transparent"
+                        android:text="云友"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/ic_launcher" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting_yunbi"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/iv_setting_yunbi_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_setting_yunbi_icon"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="云币 "
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_setting_yunbi_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/color_fff589" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_invitecode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@+id/iv_invitecode_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_invitecode_icon"
+                android:text="我的特权码"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_invitecode_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_invitecode_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_invitecode_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_renling"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="6.0dip">
+
+            <ImageView
+                android:id="@+id/iv_renling_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_renling_icon"
+                android:text="我的光热能"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_renling_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_renling_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_renling_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_wuding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="6.0dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_wuding_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_wuding_icon"
+                android:text="我的屋顶"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_wuding_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_wuding_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_wuding_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_xiangmu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="6.0dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_xiangmu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_xiangmu_icon"
+                android:text="我的项目"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_xiangmu_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_xiangmu_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_xiangmu_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_gongqiu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="6.0dip">
+
+            <ImageView
+                android:id="@+id/iv_require_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_require_icon"
+                android:text="我的供求"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_require_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_require_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_require_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_fabu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@+id/iv_fabu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_fabu_icon"
+                android:text="我的发布"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_fabu_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_fabu_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_fabu_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_pinglun"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@+id/iv_pinglun_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_pinglun_icon"
+                android:text="我的评论"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_pinglun_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_pinglun_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_pinglun_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_collection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@+id/iv_collection_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_collection_icon"
+                android:text="我的收藏"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_collection_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_collection_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_collection_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_haoyou"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@+id/iv_fensi_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_fensi_icon1"
+                android:text="我的好友"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_fensi_more1"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_haoyou_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_fensi_more1"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_fensi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@+id/iv_fensi_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_fensi_icon"
+                android:text="我的粉丝"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_fensi_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_fensi_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_fensi_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person_guanzhu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@+id/iv_guanzhu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:layout_toRightOf="@id/iv_guanzhu_icon"
+                android:text="我的关注"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_guanzhu_more"
+                android:layout_width="12.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_guanzhu_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_guanzhu_more"
+                android:background="@null"
+                android:textColor="@color/red"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

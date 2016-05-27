@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="title_bar_textsize">22.0sp</dimen>
+
+    <dimen name="textsize_12sp">12.0sp</dimen>
+
+    <dimen name="personal_item_height">40.0dip</dimen>
+
+    <dimen name="personal_item_marginLeft">5.0dip</dimen>
+
+    <dimen name="personal_item_marginRight">5.0dip</dimen>
+
+    <dimen name="personal_title_textsize">16.0sp</dimen>
+
+    <dimen name="personal_list_item_textsize">14.0sp</dimen>
+
+    <dimen name="settings_item_testsize">18.0sp</dimen>
+
+    <dimen name="settings_item_heigh">50.0dip</dimen>
+
+    <dimen name="settings_item_marginLeft">5.0dip</dimen>
+
+    <dimen name="settings_item_marginRight">5.0dip</dimen>
+
+    <dimen name="personal_edit_item_testsize">18.0sp</dimen>
+
+    <dimen name="personal_edit_item_heigh">50.0dip</dimen>
+
+    <dimen name="personal_edit_item_marginLeft">5.0dip</dimen>
+
+    <dimen name="personal_edit_item_marginRight">5.0dip</dimen>
+
+    <dimen name="alphabet_size">12.0dip</dimen>
+
+    <dimen name="umeng_socialize_pad_window_height">350.0dip</dimen>
+
+    <dimen name="umeng_socialize_pad_window_width">580.0dip</dimen>
+
+</resources>

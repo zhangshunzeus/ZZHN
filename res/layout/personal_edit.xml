@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:background="#222222"
+        android:padding="5.0dip">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="60.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#666666" />
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="资料编辑"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_bar_textsize" />
+
+        <Button
+            android:id="@+id/btn_personal_edit_save"
+            android:layout_width="72.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:background="#999999"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                android:text="@string/person_edit_introduce_txt"
+                android:textSize="16.0sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="false"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@+id/edit_personal_edit_name_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="昵称"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_personal_edit_name_lable"
+                    android:text=" *"
+                    android:textColor="@color/red" />
+
+                <EditText
+                    android:id="@+id/edit_personal_edit_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:layout_toRightOf="@id/edit_personal_edit_name_lable"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="false"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@+id/edit_personal_edit_realname_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="姓名"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_personal_edit_realname_lable"
+                    android:text=" *"
+                    android:textColor="@color/red" />
+
+                <EditText
+                    android:id="@+id/edit_personal_edit_realname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:layout_toRightOf="@id/edit_personal_edit_realname_lable"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="请输入真实姓名"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_personal_edit_gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@+id/edit_personal_edit_sex_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="性别"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_personal_edit_sex_label"
+                    android:text=" *"
+                    android:textColor="@color/red" />
+
+                <ImageView
+                    android:id="@+id/iv_more1"
+                    android:layout_width="12.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_personal_edit_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:layout_toLeftOf="@id/iv_more1"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_personal_edit_birthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@+id/edit_personal_edit_bitrhday_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="出生日期"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_personal_edit_bitrhday_label"
+                    android:text=" *"
+                    android:textColor="@color/red" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="12.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:background="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_personal_edit_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:layout_toLeftOf="@id/iv_more"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_personal_edit_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@+id/edit_personal_edit_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="手机"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_personal_edit_phone_label"
+                    android:text=" *"
+                    android:textColor="@color/red" />
+
+                <ImageView
+                    android:id="@+id/iv_more2"
+                    android:layout_width="12.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_personal_edit_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:layout_toLeftOf="@id/iv_more2"
+                    android:hint="VIP升级核实"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_personal_edit_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@+id/edit_personal_edit_email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="邮箱"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_personal_edit_email_label"
+                    android:text=" *"
+                    android:textColor="@color/red" />
+
+                <EditText
+                    android:id="@+id/edit_personal_edit_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="VIP升级核实"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_personal_edit_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="false"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@+id/edit_personal_edit_company_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="工作单位"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <ImageView
+                    android:id="@+id/iv_more3"
+                    android:layout_width="12.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_personal_edit_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:layout_toLeftOf="@id/iv_more3"
+                    android:layout_toRightOf="@id/edit_personal_edit_company_lable"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_personal_edit_job"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:id="@+id/tv_personal_edit_job_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="职业"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <ImageView
+                    android:id="@+id/iv_more4"
+                    android:layout_width="12.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_personal_edit_job"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:layout_toLeftOf="@id/iv_more4"
+                    android:layout_toRightOf="@id/tv_personal_edit_job_lable"
+                    android:background="@null"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_personal_edit_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:text="居住地"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+
+                <ImageView
+                    android:id="@+id/iv_more5"
+                    android:layout_width="12.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_personal_edit_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/personal_edit_item_marginLeft"
+                    android:layout_marginRight="@dimen/personal_edit_item_marginRight"
+                    android:layout_toLeftOf="@id/iv_more5"
+                    android:hint="奖品，商品送货地址"
+                    android:textSize="@dimen/personal_edit_item_testsize" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

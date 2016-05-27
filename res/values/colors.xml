@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="translucence">#ff506050</color>
+
+    <color name="white">#ffffffff</color>
+
+    <color name="blue">#ff0066ff</color>
+
+    <color name="red">#ffff0000</color>
+
+    <color name="no_color">#00000000</color>
+
+    <color name="bg_color">#fff4f3f3</color>
+
+    <color name="bg_color_deep">#ffe5e5e5</color>
+
+    <color name="black">#ff000000</color>
+
+    <color name="menu_header_color">#ff888888</color>
+
+    <color name="menu_bg_color">#ff191919</color>
+
+    <color name="menu_itembg_color">#ff222222</color>
+
+    <color name="menu_my_guangfu">#ff131212</color>
+
+    <color name="menu_listview_div_color">#ff3b3a3a</color>
+
+    <color name="text_color">#ff434343</color>
+
+    <color name="black_half">#50000000</color>
+
+    <color name="leftbackcolor">#ff474747</color>
+
+    <color name="gray">#ff7d7d7d</color>
+
+    <color name="bg_default">#ffcacbcf</color>
+
+    <color name="card_line">#ffdad9d9</color>
+
+    <color name="distance_time_color">#ff333333</color>
+
+    <color name="gray_time">#ff999999</color>
+
+    <color name="gray_qian">#ffcccccc</color>
+
+    <color name="btn_shadow">#ff7f7f7f</color>
+
+    <color name="gray_font">#ff575757</color>
+
+    <color name="gray_login73">#ff737373</color>
+
+    <color name="gray_loginf7">#fff7f7f7</color>
+
+    <color name="renling_color">#ff38c246</color>
+
+    <color name="color_f7f7f7">#fff7f7f7</color>
+
+    <color name="color_000000">#ff000000</color>
+
+    <color name="color_3b3b3b">#ff3b3b3b</color>
+
+    <color name="color_b1b1b1">#ffb1b1b1</color>
+
+    <color name="color_ae1919">#ffae1919</color>
+
+    <color name="color_383838">#ff383838</color>
+
+    <color name="color_cecece">#ffcecece</color>
+
+    <color name="color_eeeeee">#ffeeeeee</color>
+
+    <color name="color_2ddd0e">#ff2ddd0e</color>
+
+    <color name="color_fafafa">#fffafafa</color>
+
+    <color name="color_379137">#ff379137</color>
+
+    <color name="color_cada73">#ffcada73</color>
+
+    <color name="color_68a6db">#ff68a6db</color>
+
+    <color name="color_fff589">#fffff589</color>
+
+    <color name="color_278000">#ff278000</color>
+
+    <color name="color_9d9d9d">#ff9d9d9d</color>
+
+    <color name="color_ff8706">#ffff8706</color>
+
+    <color name="color_55b825">#ff55b825</color>
+
+    <color name="color_4c4c4c">#ff4c4c4c</color>
+
+    <color name="umeng_socialize_comments_bg">#fff4f4f4</color>
+
+    <color name="umeng_socialize_color_group">#ff2c3035</color>
+
+    <color name="umeng_socialize_list_item_textcolor">#ff333333</color>
+
+    <color name="umeng_socialize_list_item_bgcolor">#ffffffff</color>
+
+    <color name="umeng_socialize_divider">#ffe6e6e6</color>
+
+    <color name="umeng_socialize_text_time">#ff999999</color>
+
+    <color name="umeng_socialize_text_title">#ff464f61</color>
+
+    <color name="umeng_socialize_text_friends_list">#ff959696</color>
+
+    <color name="umeng_socialize_text_share_content">#ff666666</color>
+
+    <color name="umeng_socialize_ucenter_bg">#ffeeeeee</color>
+
+    <color name="umeng_socialize_text_ucenter">#ff595959</color>
+
+    <color name="umeng_socialize_edit_bg">#ffc4c4c4</color>
+
+    <color name="umeng_socialize_grid_divider_line">#fff8f8f8</color>
+
+</resources>
